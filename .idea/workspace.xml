@@ -28,9 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963bd5cb-26dc-4abf-90cd-b57d26c04361" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="963bd5cb-26dc-4abf-90cd-b57d26c04361" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +36,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629134477128</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="DZ3 create pom.xml add junit&#10;gitignore">
+      <created>1629137059800</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629137059800</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +167,8 @@
     <MESSAGE value="DZ3&#10;create pom.xml&#10;add junit" />
     <MESSAGE value="fixup! DZ3 create pom.xml add junit" />
     <MESSAGE value="DZ3 create pom.xml add junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="DZ3 create pom.xml add junit" />
+    <MESSAGE value="DZ3 create pom.xml add junit&#10;gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ3 create pom.xml add junit&#10;gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1629134433798">
@@ -172,14 +179,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1629136755192" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1629134474933">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1629137058211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629134474933" />
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629137058211" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1629126052311">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1629126052311" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1629138136307">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1629138136307" />
     <state x="612" y="296" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1629125037648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -204,6 +215,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="75" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1629121023342" />
+    <state x="147" y="64" key="MergeDialog" timestamp="1629137124770">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="64" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1629137124770" />
+    <state x="407" y="173" key="MultipleFileMergeDialog" timestamp="1629137131281">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="173" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1629137131281" />
     <state x="481" y="114" key="RollbackChangesDialog" timestamp="1629134262346">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -212,10 +231,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="247" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629134428612" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1629136668317">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1629137093246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1629136668317" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1629137093246" />
     <state x="207" y="81" key="new project wizard" timestamp="1629120589622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
