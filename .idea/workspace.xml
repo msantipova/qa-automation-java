@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="963bd5cb-26dc-4abf-90cd-b57d26c04361" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1woMIjxfVdpIOgCYzzJkwrAY2t9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m.s.antipova\IdeaProjects\qa-automated-java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m.s.antipova\IdeaProjects\myApp" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\m.s.antipova\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="963bd5cb-26dc-4abf-90cd-b57d26c04361" name="Default Changelist" comment="" />
+      <created>1629120412083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629120412083</updated>
+    </task>
+    <task id="LOCAL-00001" summary="create pom.xml&#10;add junit">
+      <created>1629122715015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629122715015</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create pom.xml&#10;add junit">
+      <created>1629124919942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629124919942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DZ3 create pom.xml add junit">
+      <created>1629125482785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629125482785</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixup! DZ3 create pom.xml add junit">
+      <created>1629125630436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629125630436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixup! DZ3 create pom.xml add junit">
+      <created>1629126037949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629126037949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DZ3&#10;create pom.xml&#10;add junit" />
+    <MESSAGE value="DZ3&#10;create pom.xml&#10;add junit" />
+    <MESSAGE value="DZ3 create pom.xml add junit" />
+    <MESSAGE value="fixup! DZ3 create pom.xml add junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! DZ3 create pom.xml add junit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1629126034919">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629126034919" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1629126052311">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1629126052311" />
+    <state x="612" y="296" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1629125037648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="612" y="296" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1629125037648" />
+    <state width="1493" height="99" key="GridCell.Tab.0.bottom" timestamp="1629126036958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="99" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629126036958" />
+    <state width="1493" height="99" key="GridCell.Tab.0.center" timestamp="1629126036958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="99" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1629126036958" />
+    <state width="1493" height="99" key="GridCell.Tab.0.left" timestamp="1629126036958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="99" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1629126036958" />
+    <state width="1493" height="99" key="GridCell.Tab.0.right" timestamp="1629126036958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="99" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1629126036958" />
+    <state x="297" y="75" key="Maven.ArtifactSearchDialog" timestamp="1629121023342">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="297" y="75" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1629121023342" />
+    <state x="247" y="0" key="SettingsEditor" timestamp="1629122038125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="247" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629122038125" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1629126054073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1629126054073" />
+    <state x="207" y="81" key="new project wizard" timestamp="1629120589622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="207" y="81" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1629120589622" />
+    <state x="429" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1629122027855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="429" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1629122027855" />
+  </component>
+</project>
