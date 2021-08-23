@@ -4,9 +4,10 @@ public class LoanCalcService {
 
     /**
      * TODO loan calculation
+     * @return
      */
-    public static int createRequest() {
-        return LoanCalcRepository.save();
+    public LoanResponse createRequest(LoanRequest request) {
+       return new LoanCalcRepository().save(request);
     }
 
 }

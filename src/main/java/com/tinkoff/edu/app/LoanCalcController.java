@@ -1,13 +1,13 @@
 package com.tinkoff.edu.app;
 
-public class LoanCalcController {
+public final class LoanCalcController {
 
     /**
      * TODO Validates and logs request
      * @return requestId
      */
-    public static int createRequest() {
-        return LoanCalcService.createRequest();
+    public LoanResponse createRequest(LoanRequest request) {
+        return new LoanCalcService().createRequest(request);
     }
 
 }
