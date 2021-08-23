@@ -11,8 +11,8 @@ public class LoanCalcTest {
 
     public static void main(String[] args) {
         Random random = new Random();
-        for (int count = 0; count < 5; count++){
-            LoanRequest request = new LoanRequest(LoanType.IP, random.nextInt(11) + 1 , 100000);
+        for (int count = 0; count < 5; count++) {
+            LoanRequest request = new LoanRequest(LoanType.IP, random.nextInt(11) + 1, 100000);
             LoanResponse response = new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository())).createRequest(request);
             System.out.println(request);
             System.out.println("requestId: " + response.getRequestId() + " must by 1");
