@@ -1,5 +1,6 @@
 package com.tinkoff.edu.app;
 
 public enum ResponseType {
-    APPROVED, DECLINED
+    APPROVED,
+    DECLINED
 }

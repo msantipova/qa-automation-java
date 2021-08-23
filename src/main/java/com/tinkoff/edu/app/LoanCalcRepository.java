@@ -2,7 +2,7 @@ package com.tinkoff.edu.app;
 
 public class LoanCalcRepository {
 
-    private static int requestId;
+    private int requestId;
 
     /**
      * TODO insert request

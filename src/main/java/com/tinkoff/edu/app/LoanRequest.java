@@ -4,6 +4,7 @@ package com.tinkoff.edu.app;
  * class Request
  */
 public class LoanRequest {
+
     private final LoanType type;
     private final int months;
     private final int amount;
@@ -27,7 +28,7 @@ public class LoanRequest {
     }
 
     public String toString() {
-        return "RQ: {" + getType() +", " + this.getAmount() + " for " + this.getMonths()+ "}";
+        return "RQ: {" + getType() + ", " + this.getAmount() + " for " + this.getMonths() + "}";
     }
 
 }
