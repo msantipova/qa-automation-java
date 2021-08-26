@@ -52,4 +52,5 @@ public class AppTest {
     public void shouldGetIncrementedIdWhenAnyCall(){
         assertEquals(6, new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository(5))).createRequest(request).getRequestId());
     }
+
 }
