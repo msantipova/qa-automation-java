@@ -6,6 +6,6 @@ public class AppTest {
 
     @Test
     public static void WriteSout() {
-            System.out.println("Gori v adu");
+        System.out.println("Gori v adu");
     }
 }

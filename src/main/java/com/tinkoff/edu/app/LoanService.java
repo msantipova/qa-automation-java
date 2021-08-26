@@ -2,6 +2,6 @@ package com.tinkoff.edu.app;
 
 public interface LoanService {
 
-    LoanResponse createRequest(LoanRequest request);
+    LoanResponse calculationAndSaveRequest(LoanRequest request);
 
 }

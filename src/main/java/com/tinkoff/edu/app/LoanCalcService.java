@@ -14,11 +14,11 @@ public class LoanCalcService implements LoanService {
      * @return Response
      */
     @Override
-    public LoanResponse createRequest(LoanRequest request) {
+    public LoanResponse calculationAndSaveRequest(LoanRequest request) {
         if (request.getMonths() <= 6)
-            return new LoanResponse(ResponseType.APPROVED, repo.save(request, ResponseType.APPROVED));
+            return new LoanResponse(ResponseType.APPROVED, repo.saveAndGenerateRequestId(request, ResponseType.APPROVED));
         else
-            return new LoanResponse(ResponseType.DECLINED, repo.save(request, ResponseType.DECLINED));
+            return new LoanResponse(ResponseType.DECLINED, repo.saveAndGenerateRequestId(request, ResponseType.DECLINED));
     }
 
 }

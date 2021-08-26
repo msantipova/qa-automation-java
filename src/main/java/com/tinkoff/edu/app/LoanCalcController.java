@@ -2,10 +2,10 @@ package com.tinkoff.edu.app;
 
 public class LoanCalcController {
 
-    private LoanService repo;
+    private LoanService Service;
 
-    public LoanCalcController(LoanService Srepo) {
-        this.repo = Srepo;
+    public LoanCalcController(LoanService Service) {
+        this.Service = Service;
     }
 
     /**
@@ -14,7 +14,7 @@ public class LoanCalcController {
      * @return Response
      */
     public LoanResponse createRequest(LoanRequest request) {
-        return repo.createRequest(request);
+        return Service.calculationAndSaveRequest(request);
     }
 
 }

@@ -10,7 +10,7 @@ public class StaticVariableLoanCalcRepository implements LoanCalcRepository {
      * @return requestId
      */
     @Override
-    public int save(LoanRequest request, ResponseType status) {
+    public int saveAndGenerateRequestId(LoanRequest request, ResponseType status) {
         //save request and status
         return ++requestId;  //return ID
     }

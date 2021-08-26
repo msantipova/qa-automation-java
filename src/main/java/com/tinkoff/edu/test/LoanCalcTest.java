@@ -1,6 +1,11 @@
 package com.tinkoff.edu.test;
 
-import com.tinkoff.edu.app.*;
+import com.tinkoff.edu.app.LoanCalcController;
+import com.tinkoff.edu.app.LoanCalcService;
+import com.tinkoff.edu.app.LoanRequest;
+import com.tinkoff.edu.app.LoanResponse;
+import com.tinkoff.edu.app.LoanType;
+import com.tinkoff.edu.app.StaticVariableLoanCalcRepository;
 
 import java.util.Random;
 
