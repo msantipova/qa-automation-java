@@ -1,19 +1,7 @@
 package com.tinkoff.edu.app;
 
-public class LoanCalcRepository {
+public interface LoanCalcRepository {
 
-    private int requestId;
-
-    /**
-     * TODO insert request
-     *
-     * @return requestId
-     */
-    public LoanResponse save(LoanRequest request) {
-        if (request.getMonths() < 6)
-            return new LoanResponse(ResponseType.APPROVED, ++requestId);
-        else
-            return new LoanResponse(ResponseType.DECLINED, ++requestId);
-    }
+    int saveAndGenerateRequestId(LoanRequest request, ResponseType status);
 
 }

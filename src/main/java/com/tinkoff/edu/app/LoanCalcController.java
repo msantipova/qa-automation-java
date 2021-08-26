@@ -1,15 +1,20 @@
 package com.tinkoff.edu.app;
 
-public final class LoanCalcController {
+public class LoanCalcController {
 
-    LoanCalcService loanCalcService = new LoanCalcService();
+    private LoanService service;
+
+    public LoanCalcController(LoanService service) {
+        this.service = service;
+    }
 
     /**
      * TODO Validates and logs request
-     * @return requestId
+     *
+     * @return Response
      */
     public LoanResponse createRequest(LoanRequest request) {
-        return loanCalcService.createRequest(request);
+        return service.calculationAndSaveRequest(request);
     }
 
 }
