@@ -38,9 +38,13 @@ public class AppTest {
 
     @Test
     public void shouldGetDeclinedStatus() {
+        //Given
         LoanRequest request = new LoanRequest(LoanType.IP, 10, 100000);
+
+        //When
         response = new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository())).createRequest(request);
 
+        //Then
         assertEquals(ResponseType.DECLINED, response.getResponseType());
     }
 
