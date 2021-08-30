@@ -9,6 +9,11 @@ public class LoanCalcController {
     }
 
     public LoanCalcController() {
+        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository());
+    }
+
+    public LoanCalcController(int idRequest) {
+        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository(idRequest));
     }
 
     /**
@@ -22,7 +27,6 @@ public class LoanCalcController {
             else if (request.getType() == LoanType.PERSON) service= new LoanCalcServicePerson();
             else return new LoanResponse(null, -1);
         return service.calculationAndSaveRequest(request);
-
     }
 
 }
