@@ -2,8 +2,16 @@ package com.tinkoff.edu.app;
 
 public class StaticVariableLoanCalcRepository implements LoanCalcRepository {
 
-    private static int requestId;  //stores ID
+    private int requestId;  //stores ID
 
+    public StaticVariableLoanCalcRepository(int requestId) {
+        this.requestId=requestId;
+    }
+
+
+    public StaticVariableLoanCalcRepository() {
+        this.requestId=0;
+    }
     /**
      * TODO insert request
      *
