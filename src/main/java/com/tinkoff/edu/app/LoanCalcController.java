@@ -8,13 +8,21 @@ public class LoanCalcController {
         this.service = service;
     }
 
+    public LoanCalcController() {
+    }
+
     /**
      * TODO Validates and logs request
      *
      * @return Response
      */
     public LoanResponse createRequest(LoanRequest request) {
+            if (request.getType() == LoanType.IP) service= new LoanCalcServiceIP();
+            else if (request.getType() == LoanType.OOO) service= new LoanCalcServiceOOO();
+            else if (request.getType() == LoanType.PERSON) service= new LoanCalcServicePerson();
+            else return new LoanResponse(null, -1);
         return service.calculationAndSaveRequest(request);
+
     }
 
 }

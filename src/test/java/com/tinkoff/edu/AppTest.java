@@ -14,13 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
 
-    private LoanRequest request;
+    private LoanRequest request = new LoanRequest(LoanType.OOO, 5, 1000);
     private LoanResponse response;
-
-    @BeforeEach
-    public void init(){
-        request = new LoanRequest(LoanType.IP, 5, 100000);
-    }
 
     @Test
     public void shouldGetId1WhenFirstCall() {
@@ -50,7 +45,17 @@ public class AppTest {
 
     @Test
     public void shouldGetIncrementedIdWhenAnyCall(){
-        assertEquals(6, new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository(5))).createRequest(request).getRequestId());
+        LoanRequest request = new LoanRequest(null, 0, 0);
+        System.out.println(request.toString());
+        assertEquals(-1, new LoanCalcController().createRequest(request).getRequestId());
+  //      assertEquals(6, new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository(5))).createRequest(request).getRequestId());
+    }
+
+    @Test
+    public void should1(){
+        response = new LoanCalcController().createRequest(request);
+        System.out.println(response.getResponseType());
+        assertEquals(1, response.getRequestId());
     }
 
 }

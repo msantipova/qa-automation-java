@@ -17,6 +17,12 @@
                     <target>6</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.1.201405082137</version>
+            </plugin>
         </plugins>
     </build>
 
@@ -27,5 +33,6 @@
             <version>5.7.2</version>
         </dependency>
     </dependencies>
+
 
 </project>
