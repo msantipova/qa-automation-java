@@ -1,20 +1,17 @@
 package com.tinkoff.edu;
 
 import com.tinkoff.edu.app.LoanCalcController;
-import com.tinkoff.edu.app.LoanCalcService;
 import com.tinkoff.edu.app.LoanRequest;
 import com.tinkoff.edu.app.LoanResponse;
 import com.tinkoff.edu.app.LoanType;
 import com.tinkoff.edu.app.ResponseType;
-import com.tinkoff.edu.app.StaticVariableLoanCalcRepository;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
 
-    private final LoanRequest request = new LoanRequest(LoanType.IP, 5, 100000);;
+    private final LoanRequest request = new LoanRequest(LoanType.IP, 5, 100000);
     private LoanResponse response;
 
     @Test
