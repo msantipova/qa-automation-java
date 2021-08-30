@@ -14,24 +14,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
 
-    private LoanRequest request;
+    private final LoanRequest request = new LoanRequest(LoanType.IP, 5, 100000);;
     private LoanResponse response;
-
-    @BeforeEach
-    public void init(){
-        request = new LoanRequest(LoanType.IP, 5, 100000);
-    }
 
     @Test
     public void shouldGetId1WhenFirstCall() {
-        response = new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository())).createRequest(request);
+        response = new LoanCalcController().createRequest(request);
 
         assertEquals(1, response.getRequestId());
     }
 
     @Test
     public void shouldGetApprovedStatus() {
-        response = new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository())).createRequest(request);
+        response = new LoanCalcController().createRequest(request);
 
         assertEquals(ResponseType.APPROVED, response.getResponseType());
     }
@@ -42,7 +37,7 @@ public class AppTest {
         LoanRequest request = new LoanRequest(LoanType.IP, 10, 100000);
 
         //When
-        response = new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository())).createRequest(request);
+        response = new LoanCalcController().createRequest(request);
 
         //Then
         assertEquals(ResponseType.DECLINED, response.getResponseType());
@@ -50,7 +45,7 @@ public class AppTest {
 
     @Test
     public void shouldGetIncrementedIdWhenAnyCall(){
-        assertEquals(6, new LoanCalcController(new LoanCalcService(new StaticVariableLoanCalcRepository(5))).createRequest(request).getRequestId());
+        assertEquals(6, new LoanCalcController(5).createRequest(request).getRequestId());
     }
 
 }

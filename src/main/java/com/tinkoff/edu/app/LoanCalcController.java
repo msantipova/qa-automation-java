@@ -8,6 +8,14 @@ public class LoanCalcController {
         this.service = service;
     }
 
+    public LoanCalcController() {
+        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository());
+    }
+
+    public LoanCalcController(int idRequest) {
+        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository(idRequest));
+    }
+
     /**
      * TODO Validates and logs request
      *
