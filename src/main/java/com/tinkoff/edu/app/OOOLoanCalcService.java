@@ -1,24 +1,23 @@
 package com.tinkoff.edu.app;
 
-public class LoanCalcServicePerson implements LoanService {
+/**
+ * class for calculation request from OOO
+ */
+public class OOOLoanCalcService implements LoanService {
     private LoanCalcRepository repo;
 
-    public LoanCalcServicePerson(LoanCalcRepository repository) {
-        repo = repository;
-    }
-
-    public LoanCalcServicePerson() {
-        repo = new StaticVariableLoanCalcRepository();
+    public OOOLoanCalcService(int idRequest) {
+        repo = new VariableLoanCalcRepository(idRequest);
     }
 
     /**
-     * TODO loan calculation
-     *
+     * loan calculation
+     * @param request
      * @return Response
      */
     @Override
     public LoanResponse calculationAndSaveRequest(LoanRequest request) {
-        if (request.getMonths() <= 6)
+        if ((request.getAmount() > 10000) & (request.getMonths() < 12))
             return new LoanResponse(ResponseType.APPROVED, repo.saveAndGenerateRequestId(request, ResponseType.APPROVED));
         else
             return new LoanResponse(ResponseType.DECLINED, repo.saveAndGenerateRequestId(request, ResponseType.DECLINED));

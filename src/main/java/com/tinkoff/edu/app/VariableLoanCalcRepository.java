@@ -1,25 +1,25 @@
 package com.tinkoff.edu.app;
 
-public class StaticVariableLoanCalcRepository implements LoanCalcRepository {
+/**
+ * save request and status
+ */
+public class VariableLoanCalcRepository implements LoanCalcRepository {
 
     private int requestId;  //stores ID
 
-    public StaticVariableLoanCalcRepository(int requestId) {
+    public VariableLoanCalcRepository(int requestId) {
         this.requestId=requestId;
     }
 
-
-    public StaticVariableLoanCalcRepository() {
-        this.requestId=0;
-    }
     /**
-     * TODO insert request
-     *
+     * insert request in variable
+     * @param request
      * @return requestId
      */
     @Override
     public int saveAndGenerateRequestId(LoanRequest request, ResponseType status) {
         //save request and status
+        System.out.println(request.toString());
         return ++requestId;  //return ID
     }
 

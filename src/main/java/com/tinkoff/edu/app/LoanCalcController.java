@@ -1,31 +1,32 @@
 package com.tinkoff.edu.app;
 
+/**
+ * class validates request
+ */
 public class LoanCalcController {
 
     private LoanService service;
-
-    public LoanCalcController(LoanService service) {
-        this.service = service;
-    }
+    private int idRequest;
 
     public LoanCalcController() {
-        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository());
+        idRequest = 0;
     }
 
     public LoanCalcController(int idRequest) {
-        this.service = new LoanCalcService(new StaticVariableLoanCalcRepository(idRequest));
+        this.idRequest = idRequest;
     }
 
     /**
-     * TODO Validates and logs request
-     *
+     * Validates and logs request
+     * @param request
      * @return Response
      */
     public LoanResponse createRequest(LoanRequest request) {
-            if (request.getType() == LoanType.IP) service= new LoanCalcServiceIP();
-            else if (request.getType() == LoanType.OOO) service= new LoanCalcServiceOOO();
-            else if (request.getType() == LoanType.PERSON) service= new LoanCalcServicePerson();
-            else return new LoanResponse(null, -1);
+        if ((request == null) || (request.getAmount() <= 0) || (request.getMonths() <= 0)) return new LoanResponse(null, -1);
+         else if (request.getType() == LoanType.IP) service= new IPLoanCalcService(idRequest);
+            else if (request.getType() == LoanType.OOO) service= new OOOLoanCalcService(idRequest);
+            else if (request.getType() == LoanType.PERSON) service= new PersonLoanCalcService(idRequest);
+
         return service.calculationAndSaveRequest(request);
     }
 

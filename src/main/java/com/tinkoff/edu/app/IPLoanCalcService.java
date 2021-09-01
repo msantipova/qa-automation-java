@@ -1,19 +1,18 @@
 package com.tinkoff.edu.app;
 
-public class LoanCalcServiceIP implements LoanService {
+/**
+ * class for calculation request from IP
+ */
+public class IPLoanCalcService implements LoanService {
     private LoanCalcRepository repo;
 
-    public LoanCalcServiceIP(LoanCalcRepository repository) {
-        repo = repository;
-    }
-
-    public LoanCalcServiceIP() {
-        repo = new StaticVariableLoanCalcRepository();
+    public IPLoanCalcService(int idRequest) {
+        repo = new VariableLoanCalcRepository(idRequest);
     }
 
     /**
-     * TODO loan calculation
-     *
+     * loan calculation
+     * @param request
      * @return Response
      */
     @Override
