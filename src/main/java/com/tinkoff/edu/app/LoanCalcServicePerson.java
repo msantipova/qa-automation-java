@@ -3,10 +3,11 @@ package com.tinkoff.edu.app;
 /**
  * class for calculation request from Person
  */
-public class PersonLoanCalcService implements LoanService {
-    private LoanCalcRepository repo;
+public class LoanCalcServicePerson implements LoanService {
 
-    public PersonLoanCalcService(int idRequest) {
+    private final LoanCalcRepository repo;
+
+    public LoanCalcServicePerson(int idRequest) {
         repo = new VariableLoanCalcRepository(idRequest);
     }
 
