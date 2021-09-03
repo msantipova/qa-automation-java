@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
 
-    private final LoanRequest request = new LoanRequest(LoanType.IP, 5, 100000);
+    private final LoanRequest request = new LoanRequest(LoanType.OOO, 10, 100000);
     private LoanResponse response;
 
     @Test
@@ -31,7 +31,67 @@ public class AppTest {
     @Test
     public void shouldGetDeclinedStatus() {
         //Given
-        LoanRequest request = new LoanRequest(LoanType.IP, 10, 100000);
+        LoanRequest request = new LoanRequest(LoanType.IP, 6, 100000);
+
+        //When
+        response = new LoanCalcController(5).createRequest(request);
+
+        //Then
+        assertEquals(ResponseType.DECLINED, response.getResponseType());
+    }
+
+    @Test
+    public void shouldGetErrorWhenApplyNullRequest () {
+        //Given
+        LoanRequest request = null;
+
+        //When
+        response = new LoanCalcController().createRequest(request);
+
+        //Then
+        assertEquals(-1, response.getRequestId());
+    }
+
+    @Test
+    public void shouldGetErrorWhenApplyZeroOrNegativeAmountRequest () {
+        //Given
+        LoanRequest request = new LoanRequest(LoanType.OOO, 10, 0);
+
+        //When
+        response = new LoanCalcController().createRequest(request);
+
+        //Then
+        assertEquals(-1, response.getRequestId());
+    }
+
+    @Test
+    public void shouldGetErrorWhenApplyZeroOrNagativeMonthsRequest  () {
+        //Given
+        LoanRequest request = new LoanRequest(LoanType.OOO, 0, 100000);
+
+        //When
+        response = new LoanCalcController().createRequest(request);
+
+        //Then
+        assertEquals(-1, response.getRequestId());
+    }
+
+    @Test
+    public void shouldGetPersonApprovedRequest  () {
+        //Given
+        LoanRequest request = new LoanRequest(LoanType.PERSON, 6, 5000);
+
+        //When
+        response = new LoanCalcController(8).createRequest(request);
+
+        //Then
+        assertEquals(ResponseType.APPROVED, response.getResponseType());
+    }
+
+    @Test
+    public void shouldGetPersonDeclinedRequest  () {
+        //Given
+        LoanRequest request = new LoanRequest(LoanType.PERSON, 6, 15000);
 
         //When
         response = new LoanCalcController().createRequest(request);
@@ -41,8 +101,15 @@ public class AppTest {
     }
 
     @Test
-    public void shouldGetIncrementedIdWhenAnyCall(){
-        assertEquals(6, new LoanCalcController(5).createRequest(request).getRequestId());
+    public void shouldGetOOODeclinedRequest  () {
+        //Given
+        LoanRequest request = new LoanRequest(LoanType.OOO, 6, 5000);
+
+        //When
+        response = new LoanCalcController(6).createRequest(request);
+
+        //Then
+        assertEquals(ResponseType.DECLINED, response.getResponseType());
     }
 
 }
