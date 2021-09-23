@@ -2,6 +2,7 @@ package com.tinkoff.edu.app;
 
 import java.util.UUID;
 
+
 /**
  * array Responses
  */
@@ -11,13 +12,12 @@ public class ArrayResponse {
     private static int counter;
 
     public static ResponseType getResponse(UUID id) {
-        int counter;
-        for (counter = 0; counter < responses.length; counter++) {
-            if (responses[counter].getRequestId().equals(id)) {
-                break;
+        for (LoanResponse response : responses) {
+            if (response.getRequestId().equals(id)) {
+                return response.getResponseType();
             }
         }
-        return responses[counter].getResponseType();
+       throw new RuntimeException("element not found");
     }
 
     public static void setResponse(LoanResponse response) {
@@ -26,25 +26,25 @@ public class ArrayResponse {
 
 
     public static void changeStatusResponse(UUID id, ResponseType status) {
-        int counter;
-        for (counter = 0; counter < responses.length; counter++) {
-            if (responses[counter].getRequestId().equals(id)) {
-                responses[counter].setResponseType(status);
+        for (LoanResponse response : responses) {
+            if (response.getRequestId().equals(id)) {
+                response.setResponseType(status);
                 break;
             }
         }
     }
 
     public static void toString(UUID id) {
-        int counter;
-        for (counter = 0; counter < responses.length; counter++) {
-            if (responses[counter].getRequestId().equals(id)) {
-                break;
+        for (LoanResponse response : responses) {
+            if (response.getRequestId().equals(id)) {
+                System.out.printf("value: %s ; %s ; %s %n",
+                        response.getRequestId(),
+                        response.getResponseType(),
+                        response.getRequest()
+                );
+                        break;
             }
         }
-        System.out.println( "ArrayResponse {" + responses[counter].getRequestId()
-                    + ", " + responses[counter].getResponseType() + "} " +
-                     responses[counter].getRequest());
     }
 
 }

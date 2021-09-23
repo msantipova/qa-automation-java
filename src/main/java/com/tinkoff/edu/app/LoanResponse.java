@@ -41,7 +41,7 @@ public class LoanResponse {
         if (o == null || getClass() != o.getClass()) return false;
         LoanResponse that = (LoanResponse) o;
         return Objects.equals(request, that.request) &&
-                responseType == that.responseType &&
+                Objects.equals(responseType, that.responseType) &&
                 Objects.equals(requestId, that.requestId);
     }
 

@@ -36,7 +36,7 @@ public class LoanCalcController {
                 return new LoanCalcService(repo).calculationAndSaveRequest(request);
             }
             catch (MyException e){
-                throw new MyException(e.toString());
+                throw e;
             }
     }
 
