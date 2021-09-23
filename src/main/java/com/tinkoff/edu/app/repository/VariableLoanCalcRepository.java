@@ -1,11 +1,18 @@
-package com.tinkoff.edu.app;
+package com.tinkoff.edu.app.repository;
+
+import com.tinkoff.edu.app.ArrayResponse;
+import com.tinkoff.edu.app.LoanRequest;
+import com.tinkoff.edu.app.ResponseType;
+
+import java.util.UUID;
 
 /**
  * save request and status
  */
 public class VariableLoanCalcRepository implements LoanCalcRepository {
 
-    private int requestId;  //stores ID
+    private int requestId;
+    private ArrayResponse arrayResponse;//stores ID
 
     public VariableLoanCalcRepository(int requestId) {
         this.requestId=requestId;
@@ -17,10 +24,10 @@ public class VariableLoanCalcRepository implements LoanCalcRepository {
      * @return requestId
      */
     @Override
-    public int saveAndGenerateRequestId(LoanRequest request, ResponseType status) {
+    public UUID saveAndGenerateRequestId(LoanRequest request, ResponseType status) {
         //save request and status
         System.out.println(request.toString());
-        return ++requestId;  //return ID
+        return UUID.randomUUID();  //return ID
     }
 
 }
